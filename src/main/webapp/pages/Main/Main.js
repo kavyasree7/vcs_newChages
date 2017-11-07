@@ -15,13 +15,4 @@ Application.$controller("MainPageController", ["$scope", function($scope) {
     };
 
 
-    $scope.search2Focus = function($event, $isolateScope) {
-        // alert('on focuse');
-    };
-
-
-    $scope.search2Change = function($event, $isolateScope, newVal, oldVal) {
-        console.log('change');
-    };
-
 }]);

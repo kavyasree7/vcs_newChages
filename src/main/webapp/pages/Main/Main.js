@@ -14,4 +14,10 @@ Application.$controller("MainPageController", ["$scope", function ($scope) {
          */
     };
 
-}]);
+
+        $scope.search2Focus = function ($event, $isolateScope) { 
+
+        };
+ 
+    }
+]);

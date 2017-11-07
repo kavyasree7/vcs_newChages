@@ -1,8 +1,8 @@
-Application.$controller("MainPageController", ["$scope", function ($scope) {
+Application.$controller("MainPageController", ["$scope", function($scope) {
     "use strict";
 
     /* perform any action on widgets/variables within this block */
-    $scope.onPageReady = function () {
+    $scope.onPageReady = function() {
         /*
          * variables can be accessed through '$scope.Variables' property here
          * e.g. to get dataSet in a staticVariable named 'loggedInUser' use following script
@@ -15,9 +15,13 @@ Application.$controller("MainPageController", ["$scope", function ($scope) {
     };
 
 
-        $scope.search2Focus = function ($event, $isolateScope) { 
+    $scope.search2Focus = function($event, $isolateScope) {
+        // alert('on focuse');
+    };
 
-        };
- 
-    }
-]);
+
+    $scope.search2Change = function($event, $isolateScope, newVal, oldVal) {
+        console.log('change');
+    };
+
+}]);
